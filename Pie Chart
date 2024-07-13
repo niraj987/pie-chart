@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+labels =['A', 'B','C', 'D','E']
+sizes = [15,30,25,10,20]
+colors =['gold', 'silver', 'lightgreen','lightskyblue','red']
+explode= (0.1,0.1,0.2,0.1,0)
+plt.figure(figsize=(7,5))
+plt.pie(sizes,explode=explode, labels= labels, colors= colors, autopct='%1.2f%%', shadow =True)
+plt.title("pie chart")
+plt.axis('equal')
+plt.show()
